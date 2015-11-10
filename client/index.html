@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+
   <head>
     <meta charset="utf-8">
     <title>jukebox</title>
@@ -9,16 +10,27 @@
     <!-- your styles -->
     <link rel="stylesheet" href="styles/styles.css">
 
-    <!-- dependencies -->
-    <script src="//connect.soundcloud.com/sdk-2.0.0.js"></script>
+    <!-- dependencies
+    <script src="bower_components/react/react.js"></script>
+    -->
+
+    <script src="https://connect.soundcloud.com/sdk/sdk-3.0.0.js"></script>
     <script src="bower_components/underscore/underscore-min.js"></script>
     <script src="bower_components/react/JSXTransformer.js"></script>
-    <script src="bower_components/react/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser.js"></script>
+
   </head>
+
   <body>
+
+    <div id="content"></div>
 
     <!-- your scripts -->
     <script type="text/javascript" src="scripts/config.js"></script>
+    <script type="text/jsx" src="scripts/sc.js"></script>
     <script type="text/jsx" src="scripts/app.js"></script>
   </body>
+
 </html>
